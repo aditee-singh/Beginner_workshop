@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Programming Workshop | NCS</title>
+    <!-- reveal.js CSS Files -->
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+    <!-- Code syntax highlight CSS file -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!--[if lt IE 9]>
+			<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Particle Js  -->
+    <div id="particles-js"></div>
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="js/particles.min.js"></script>
+
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="zoom">
+<section>
+                <img style="margin-bottom: 0px" height="170" src="assets/ncsncs_logo.png" alt="" />
+                <h2 style="font-size: 90px !important">
+                    Hello <span style="color: #ffdf3f">Everyone!</span>
+                </h2>
+                <h5>Welcome to our Beginner's Workshop on C</h5>
+                <h5>Nibble Computer Society</h5>
+                <br />
+
+                <small>
+						Press <code>Spacebar</code> for next slide. <br />
+						<code>Esc</code> or '<code>o</code>' for overview.
+					</small>
+</section>
+<section>
+/*link to website*/
+</section>
+            </section>
+
+            <section data-transition="concave">
+                <section>
+                    <h3>What is Programming?</h3>
+                    <ul>
+                        <li>Telling a Computer what to do.</li>
+                        <li>How to do.</li>
+                        <li>When to do.</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="assets/gif/1.5-What-Is-Programming.gif" alt="" />
+                </section>
+                <section>
+                    <ul>
+                        <li>Turn and face the cliff.</li>
+                        <li>Walk towards the cliff.</li>
+                        <li>Stop at the edge of the cliff.</li>
+                            <ol>
+                                <li>Left foot forward.</li>
+                                <li>Right foot forward</li>
+                                <li>Go back to step 1</li>
+                            </ol>
+                    </ul>
+                </section>
+            </section>
+
+            <section data-transition="concave">
+                <section>
+                    <h3>Why is Programming useful? ?</h3>
+                    <img style="height:450px; width: 700px" src="assets/Steve_jobs.jpg" alt="" />
+                </section>
+                <section>
+                    <ul>
+                        <li>Improve Problem Solving Skills.</li>
+                        <li>Used in daily usage softwares.</li>
+                        <li>To extend the usability of computers.</li>
+                        <li>Great Career Options.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section data-transition="zoom">
+                <section>
+                    <h3>What are Programming Languages?</h3>
+                        <p>Programming languages are used by programmers 
+                            (and developers) to communicate with the computers.
+                        </p>
+                        <p>Computer do not understand any human languages, they require
+                            special instructions written in a certain way.
+                        </p>
+                </section>
+
+                <section>
+                    <p>A Programming Language is that "way". It's easy enough for us to understand
+                        and write, and can be understood by a computer as well.
+                    </p>                
+                </section>
+                <section>
+                    <img src="assets/Prog-Languages.png" alt=""/>
+                </section>
+            </section>
+
+            <section data-transition="concave">
+                <section>
+                    <h3>Need for different languages?</h3>
+                </section>
+                <section>
+                    <p>Sometimes you may want your program to run very fast and compute
+                        millions of instructions in milliseconds.
+                    </p>
+                    <p>Sometimes you may want more flexibility and want to control every
+                        detail in your computer.
+                    </p>
+                </section>
+                <section>
+                    <p>There can be uncountable scenarios to program a computer.</p>
+                    <p>More languages help you choose for your own use case.</p>
+                </section>
+                <section>
+                    <img src="assets/Languages.png" alt="" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Getting Started With Programming!</h3>
+                    <img src="assets/programming.jpg" alt="" />
+                </section>
+                <section>
+                    <img src="assets/Hello_cpp.png" alt="" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Compilation</h3>
+                </section>
+                <section>
+                    <h3>What is Compilation?</h3>
+                    <ul>
+                        <li>
+                            Converting .cpp files into .exe files, which can be executed on the computer.
+                        </li>
+                        <li>.exe files are completely in machine language. We can't understand them.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>How to compile?</h3>
+                    <ul>
+                        <li>Demonstrating on local environment, using g++</li>
+                        <li>No need to compile on IDEs, they do it all in the background automatically.</li>
+                        <li>Everytime we make changes in the code, we have to check if the code is running correctly.
+                            For that, we compile to renew the .exe file.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="assets/Compiler.png" alt="" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Let's go Practical!</h3>
+                </section>
+                <section>
+                    <h2>Data types and variables</h2>
+                </section>
+                <section>
+                    <h3>What is data?</h3>
+                        <p>Data is a collections of facts, such as numbers, words, measurements,
+                            observations or just description of things.
+                        </p>
+                </section>
+                <section>
+                    <p>There is no sense of programming without any data.</p>
+                        <p>Programming is done to take input as data, process or manipulate data,
+                            or give output as data.
+                        </p>
+                </section>
+                <section>
+                    <h3>Need for different data types?</h3>
+                    <ul>
+                        <li>Ease to program.</li>
+                        <li>Saves Memory.</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="assets/Data-types.png" alt="" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Control Programming Flow</h3>
+                    <p>(Which statements to execute</p>
+                    <p>before/after/when/until etc)</p></br>
+                    <p style="font-size: 25px;"><i>Statements written inside a pair of braces {...}
+                        are treated as a unified block of code.
+                    </i></p>
+                </section>
+                <section>
+                    <h5>If-Else statements</h5>
+                    <img src="assets/If-else.png" alt="" />
+                </section>
+                <section>
+                    <h3>If-Else ladder</h3>
+                    <img style="height: 550px; width: 600px;" src="assets/If-else-ladder.png" alt="" />
+                </section>
+                <section>
+                    <h3>Nested if</h3>
+                    <img src="assets/Nested-if.png" alt="" />
+                </section>
+                <section>
+                    <h3>Switch Statements</h3>
+                    <img style="height: 550px; width: 600px;" src="assets/Switch.png" alt="" />
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Loops</h3>
+                </section>
+                <section>
+                    <h3>Need of Loops</h3>
+                    <p>Write a program to print numbers 1 to 10</p>
+                    <img style="height: 500px;" src="assets/Numbers.png" alt="" />
+                </section>
+                <section>
+                    <h3>While loop</h3>
+                    <img style="height: 400px; width: 400px;" src="assets/While-loop.jpg" alt="" />
+                </section>
+                <section>
+                    <img src="assets/while-loop-1.png" alt="" />
+                </section>
+                <section>
+                    <h3>Do-While Loop</h3>
+                    <img style="height: 400px; width: 400px;" src="assets/Do-While.jpg" alt="" />
+                </section>
+                <section>
+                    <img src="assets/do-while-1.png" alt="" />
+                </section>
+                <section>
+                    <h3>For Loop</h3>
+                    <img src="assets/for-loop.jpg" alt="" />
+                </section>
+                <section>
+                    <img src="assets/for-loop-1.png" alt="" />
+                </section>
+                <section> 
+                    <h3>Infinite Loop</h3>
+                    <p style="font-size: 30px;">An infinite loop is a sequence of instructions that, as written,
+                        will continue endlessly, unless an external intervention occurs.
+                    </p>
+                    <img src="assets/Infinite-loop.png" alt="" />
+                 </section>
+            </section>
+
+            <section>
+                <section data-transition="concave">
+                    <h3>Arrays</h3>
+                </section>
+                <section>
+                    <h3>What is an Array?</h3>
+                    <p>An <em>Array</em> is a collection of items stored at contiguos memory locations.</p>
+                </section>
+                <section>
+                    <h3>Need of an Array</h3>
+                    <p style="font-size: 35px;">Problem to store ages of 100 people and iterating over it</p>
+                    <img src="assets/Array-1.png" alt="" />
+                </section>
+                <section>
+                    <h3>What are Arrays and their usefulness?</h3>
+                    <img src="assets/Array-2.jpg" alt="" />
+                </section>
+                <section>
+                    <h3>Types of Arrays</h3>
+                    <img src="assets/Array-3.png" alt="" />
+                </section>
+                <section>
+                    <h3>Limitations of Arrays</h3>
+                    <ul>
+                        <li>Static data structure</li>
+                        <li>All elements have the same data types</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section data-transition="zoom">
+                    <h3>Pointers and references</h3>
+                </section>
+                <section data-transition="zoom">
+                    <h3>Need of Pointers</h3>
+                    <p>Sometimes it’s better to give the address of your home rather than giving your home.</p>
+                </section>
+                <section>
+                    <h3 style="padding-top: 15px;">References</h3>
+                    <img src="assets/References.png" alt="" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Functions</h3>
+                </section>
+                <section>
+                    <div>
+                        <h3>Need for Functions</h3>
+                        <ul style="max-width: 720px; font-size: 30px; padding-left: 30px;">
+                            <li>Modular</li>
+                            <li>We can define a code once and then use it as many times as we want in just one line.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src="assets/functions.png" alt="" />
+                </section>
+                <section>
+                    <h3 style="font-size: 50px;">Declaring and defining a function</h3>
+                    <img style="height: 550px; width: 680px;" src="assets/functions-2.png" alt="" />
+                </section>
+            </section>
+            <section data-transition="zoom">
+                <h3>That's All Folks</h3>
+                <p>For Any Queries</p>
+                <a href="http://www.facebook.com/nibblecomputersociety" target="_blank">
+                    <img src="assets/facebook.svg" width="64px" />
+                </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.github.com/ncs-jss" target="_blank">
+                        <img src="assets/github-icon.svg" height="64px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.hackncs.com" target="_blank">
+                        <img src="assets/ncsncs_logo.png" height="64px" />
+                    </a>
+                    <h3>Thank You</h3>
+                    <p>Nibble Computer Society</p>
+            </section>
+    </div>
+</div>
+
+<!-- reveal.js JS Files -->
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/particle.js"></script>
+<script>
+    // Required, even if empty.
+    Reveal.initialize({
+        history: true,
+        transition: "convex",
+        dependencies: [{
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            },
+        }, ],
+    });
+    Reveal.configure({
+        slideNumber: "h.v",
+    });
+</script>
+
+<!-- Script to save PDF. Put "print-pdf" in query string and press Ctrl+P to save. -->
+<script>
+    if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "css/print/pdf.css";
+        document.getElementsByTagName("head")[0].appendChild(link);
+    }
+</script>
+</body>
+
+</html>
